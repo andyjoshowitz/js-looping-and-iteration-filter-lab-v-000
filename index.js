@@ -4,8 +4,11 @@ function findMatching (collection, name) {
   return matches;
 }
 
-function fuzzyMatch () {
-
+function fuzzyMatch(collection, startOfName) {
+  const matches = collection.filter( function(name) {
+    return name.startsWith(startOfName)
+  });
+  return matches;
 }
 
 function matchName () {
