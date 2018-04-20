@@ -11,6 +11,7 @@ function fuzzyMatch(collection, startOfName) {
   return matches;
 }
 
-function matchName () {
-
+function matchName(collection, name) {
+  const matches = collection.filter(function(driver){return driver.name === name});
+  return matches;
 }
